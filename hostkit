@@ -157,7 +157,6 @@ if ( ! class_exists( 'Hostkit' ) ) :
 	
 		public function setup_objects() {
 
-			// self::$instance->system    = new wp_systemAvi();
 
 		}
 
