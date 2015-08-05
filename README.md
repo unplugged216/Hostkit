@@ -12,3 +12,8 @@ One hurdle for the operator making use of the WHMCS software is the lack of mode
 this service with WordPRess stands out like a sore thumb on any website.
 
 This plugin attempts ot remedy all of the ails of WHMCS integrtion in WordPress by odffering a full integration of the WHMCS API.
+
+
+=============================================================================================
+THIS PROJECT IS JUST STARTING OUT, AND SHOULD BY NO MEANS BE USED IN A PRODUCTION ENVIRONMENT
+=============================================================================================
