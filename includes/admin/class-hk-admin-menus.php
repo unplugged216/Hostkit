@@ -44,8 +44,8 @@ if ( ! class_exists( 'HK_Admin_Menus' ) ) :
 	    * Init the settings page
 	    */
 	    public function settings_page() {
-	    	if ( ! class_exists( 'HK_Admin_Settings' ) )  include 'class-hk-admin-settings.php';
-	    	HK_Admin_Settings::output();
+	    	$HK =  hk_start_class('Admin_Page_Manager');
+	    	include_once( 'template/class-hk-settings-page.php' );
 	    }
 	}
 
