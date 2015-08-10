@@ -142,7 +142,17 @@ if ( ! class_exists( 'Hostkit' ) ) :
 		*/
 		private function includes() {
 
-		
+			// utility files
+			if ( is_admin() ){ 
+				require_once HOSTKIT_DIR . 'includes/admin/class-hk-admin.php';
+			}
+
+			require_once HOSTKIT_DIR . 'includes/utilities/avi-form.php';
+			require_once HOSTKIT_DIR . 'includes/utilities/hk-string.php';
+
+			require_once HOSTKIT_DIR . 'includes/hk-functions.php';
+			require_once HOSTKIT_DIR . 'includes/whmcs/hk-whmcs-functions.php';
+			require_once HOSTKIT_DIR . 'includes/class-hk-ajax.php';
 	
 		}
 
@@ -157,6 +167,7 @@ if ( ! class_exists( 'Hostkit' ) ) :
 	
 		public function setup_objects() {
 
+			// self::$instance->system    = new wp_systemAvi();
 
 		}
 

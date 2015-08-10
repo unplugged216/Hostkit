@@ -25,7 +25,10 @@ if ( ! class_exists( 'HK_Admin' ) ) :
 	    * Include any classes we need within admin.
 	    */
 	    public function includes() {
-		include_once( 'class-hk-admin-menus.php' );
+	    	include_once( 'class-hk-admin-menus.php' );
+	    	include_once( 'class-hk-admin-assets.php' );
+	    	include_once( 'hk-admin-functions.php' );
+	    	include_once( 'class-hk-admin-page-manager.php' );
 	    }
 
 	}
