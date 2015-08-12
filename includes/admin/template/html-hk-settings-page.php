@@ -9,11 +9,22 @@
  *
  */
 if ( ! defined( 'WPINC' ) ) die;
+
+
+$hk_get_ajaxdata = 'action=hk_test_apidetails';
+$hk_get_orders   = 'action=hk_get_orders';
+
+
+
 ?>
 
 
 <!-- settings pagewrapper -->
 <section id="hk-dashboard-wrapper">
+
+
+	<div class="hk-init-valwrap" data-action="<?php echo $hk_get_ajaxdata;  ?>"></div>
+	<div class="hk-init-valwrap" data-action="<?php echo $hk_get_orders;  ?>"></div>
 
 
 	<?php 
@@ -128,15 +139,47 @@ if ( ! defined( 'WPINC' ) ) die;
 			<div class="hk-panel">
 
 				<div class="hk-panel-header">
-					<h5><?php _e('System Status','hostkit'); ?></h5>
+					<h5><?php _e('Business Vitals','hostkit'); ?></h5>
 				</div>
 
-				<div class="hk-panel-body">
+				<div class="hk-panel-body hk-quickstats-outer">
 
-					&nbsp;
+					<div class="hk-quickstats-panel hk-quickstats-income">
+						<span class="hk-hero-stats">0</span>
+						<?php _e('Income','hk'); ?> <?php echo date_i18n( 'M Y', time(), false ); ?>
+					</div>
+
+					<div class="hk-quickstats-panel hk-quickstats-pending-orders">
+						<span class="hk-hero-stats">0</span>
+						<?php _e('Pending orders','hk'); ?>
+					</div>
+
+					<div class="hk-quickstats-panel hk-quickstats-tickets-open">
+						<span class="hk-hero-stats">0</span>
+						<?php _e('Open Tickets','hk'); ?>
+					</div>
 
 				</div>
 			</div><!-- .hk-api-settings-panel -->
+			<br/>
+
+
+			<div class="hk-panel">
+
+				<div class="hk-panel-header">
+					<h5><?php _e('Latest Orders','hostkit'); ?></h5>
+				</div>
+
+				<div class="hk-panel-body hk-latest-transactions">
+
+
+				</div>
+			</div><!-- .hk-api-settings-panel -->
+
+
+
+
+
 		</div>
 
 

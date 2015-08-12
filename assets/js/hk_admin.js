@@ -6,7 +6,41 @@ jQuery( function ( $ ) {
 		// register the click listener
 		init: function() {
 			$( 'a.hk-ajax-task' ).on( 'click', this.ajax_update_values );
+
+			hk_admin.init_values();
+
 		},
+
+
+		// get hte initial values for a page
+		init_values: function() {
+			var element = $('.hk-init-valwrap'),
+				data    = element.data('action') + '&security=' + hk_admin_values.security,
+				branch  = element.data('function')
+
+
+			console.log(data);
+
+			$.ajax({
+				url    : ajaxurl,
+				data   : data,
+				type   : 'POST',
+				success: function( response ) {	
+
+					var details = response.results,
+						income  = details.income_thismonth.split(' ');
+
+					$('.hk-quickstats-income').find('.hk-hero-stats').html(income[0]);
+					$('.hk-quickstats-pending-orders').find('.hk-hero-stats').html(details.orders_pending);
+					$('.hk-quickstats-tickets-open').find('.hk-hero-stats').html(details.tickets_open);
+
+				}					
+			});
+
+		},
+
+
+		update_vitals()
 
 
 		// update ajax values
@@ -29,9 +63,6 @@ jQuery( function ( $ ) {
 				data   : data,
 				type   : 'POST',
 				success: function( response ) {	
-
-					console.log(response);
-
 
 					var return_message = (response.message != '')? response.message : hk_admin_values.success_submit;
 					

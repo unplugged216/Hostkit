@@ -5,7 +5,7 @@
 /* ======================= [05] PANEL STYLES ======================== */
 /* ======================= [06] BUTTON STYLES ======================= */
 /* ======================= [07] WHMCS PRESS BRANDING ================ */
-
+/* ======================= [08] QUICKSTATS PANEL ==================== */
 
 
 /* ======================= [01] LAYOUT STYLES ======================= */
@@ -449,3 +449,30 @@
 }
 
 
+/* ======================= [08] QUICKSTATS PANEL ==================== */
+
+
+.hk-quickstats-outer{
+	overflow: auto;
+}
+
+.hk-quickstats-panel{
+	float: left;
+	margin: 10px 2% 10px 2%;
+	width: 29%;
+	color: #222;
+	background: #F3F7F9;
+	border : 1px solid rgba(0,0,0,0.1);
+	text-align :center;
+	padding: 20px 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hk-hero-stats{
+	display: block;
+	font-weight: 900;
+	line-height: 50px;
+	font-size: 25px;
+}
