@@ -1,0 +1,502 @@
+/* ======================= [01] LAYOUT STYLES ======================= */
+/* ======================= [02] HEADER STYLES ======================= */
+/* ======================= [03] NAVIGATION STYLES =================== */
+/* ======================= [04] MAIN SECTION STYLES ================= */
+/* ======================= [05] PANEL STYLES ======================== */
+/* ======================= [06] BUTTON STYLES ======================= */
+/* ======================= [07] WHMCS PRESS BRANDING ================ */
+/* ======================= [08] QUICKSTATS PANEL ==================== */
+/* ======================= [09] IP ADDRESS PANEL ==================== */
+
+
+/* ======================= [01] LAYOUT STYLES ======================= */
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+#hk-dashboard-wrapper{
+	margin-left: -20px;
+}
+
+.toplevel_page_hk-settings{
+	background: #f1f4f5;
+}
+
+.toplevel_page_hk-settings #wpfooter{
+    background: #2A363B;
+    color: #fff;
+    margin-left: 200px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.toplevel_page_hk-settings.folded #wpfooter{
+    margin-left: 70px;
+}
+
+.toplevel_page_hk-settings #wpfooter p{
+    padding: 5px;
+}
+
+.toplevel_page_hk-settings #wpfooter p a{
+	color: #57B4DF;
+}
+
+.hk-span-3{
+	float       : left;
+	width       : 24%;
+	margin-right: 1.5%;
+}
+
+.hk-span-6{
+	float       : left;
+	width       : 49%;
+	margin-right: 1.5%;
+}
+
+.hk-column{
+	position     : relative;
+	box-sizing   : border-box;
+	margin-bottom: 20px;
+}
+
+.hk-last-column{
+	margin-right: 0;
+}
+
+
+.hk-color-branding{
+	background: #57B4DF;
+	color     : #fff;
+}
+
+.hk-color-red{
+	background: #F14F4F;
+	color     : #fff;
+}
+
+.hk-color-green{
+	background : #61C17D;
+	color      : #fff;
+}
+
+.hk-color-dark{
+	background : #2A363B;
+	color      : #fff;
+}
+
+.hk-color-grey{
+	background : #a3afb7;
+	color      : #fff;
+}
+
+
+
+
+/* ======================= [02] HEADER STYLES ======================= */
+
+.hk-page-title{
+	padding: 40px 40px 10px 40px;
+}
+
+.hk-page-title h2{
+	display    : inline-block;
+	font-size  : 44px;
+	font-weight: 200;
+	padding    : 0;
+	margin     : 13px 0;
+}
+
+
+/* ======================= [03] NAVIGATION STYLES =================== */
+
+.hk-main-nav{
+	background           : #fff;
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	height               : 50px;
+	margin               : 0 40px 20px 40px;
+}
+
+.hk-main-nav ul{
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.hk-main-nav ul li{
+	height: 50px;
+	display: inline-block;
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+.hk-main-nav ul li.hk-current-user{
+	margin-right: 20px;
+}
+
+.hk-main-nav ul li.hk-current-user img{
+	-webkit-border-radius: 32px;
+	border-radius        : 32px;
+	margin-top           : 9px;
+}
+
+/* ======================= [04] MAIN SECTION STYLES ================= */
+
+.hk-page-body{
+	padding    : 40px;
+	padding-top: 0;
+}
+
+
+/* ======================= [05] PANEL STYLES ======================== */
+
+/* === PANEL OUTER == */
+.hk-panel{
+	background           : #fff;
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid #e7ecee;
+}
+
+
+/* === PANEL HEADER == */
+.hk-panel-header{
+	background   : #fbfcfc;
+	padding      : 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+
+.hk-panel-header h5{
+	padding    : 0;
+	font-weight: 200;
+	font-size  : 18px;
+	margin     : 0;
+	color      : #37474f;
+}
+
+/* === PANEL BODY == */
+.hk-panel-body{
+	padding    : 20px;
+	padding-top: 5px;
+	position   : relative;
+}
+
+
+/* === PANEL FOOTER == */
+.hk-panel-footer{
+	background: #2a363b;
+	padding   : 15px 20px;
+	text-align: right;
+}
+
+
+/* === PANEL MESSAGES === */
+.hk-update-message{
+	text-align    : center;
+	font-weight   : 200;
+	padding       : 20px 0;
+	text-transform: uppercase;
+	position      : absolute;
+	left          : 0;
+	width         : 100%;
+	bottom        : 0;
+	display       : none;
+}
+
+
+/* === PANEL INPUTS === */
+.hk-panel label{
+	font-size: 12px;
+	opacity  : 0.6;
+}
+
+.hk-panel input[type=password],
+.hk-panel input[type=text]{
+	background        : #f3f7f9;
+	width             : 100%;
+	-webkit-box-shadow: none;
+	box-shadow        : none;
+	font-weight       : 200;
+	border: 1px solid e8eff3;
+}
+
+.hk-panel input[type=password]:focus,
+.hk-panel input[type=text]:focus{
+	border: 1px solid #57B4DF;
+}
+
+.hk-panel input[type=password]::-webkit-input-placeholder,
+.hk-panel input[type=text]::-webkit-input-placeholder {
+   color: #999;
+}
+
+.hk-panel input[type=password]:-moz-placeholder ,
+.hk-panel input[type=text]:-moz-placeholder { /* Firefox 18- */
+    color: #999; 
+}
+
+.hk-panel input[type=password]::-moz-placeholder,
+.hk-panel input[type=text]::-moz-placeholder {  /* Firefox 19+ */
+    color: #999; 
+}
+
+.hk-panel input[type=password]:-ms-input-placeholder ,
+.hk-panel input[type=text]:-ms-input-placeholder {  
+    color: #999; 
+}
+
+
+
+.hk-test-connection{
+	text-align: center;
+}
+
+
+/* ======================= [06] BUTTON STYLES ======================= */
+
+
+.hk-button{
+	text-transform       : uppercase;
+	padding              : 3px 10px;
+	font-size            : 12px;
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	cursor               : pointer;
+}
+
+.hk-button.hk-color-branding:hover{
+	background: #111;
+	color     : #57B4DF;
+}
+
+.hk-button.hk-color-grey:hover{
+	background: #111;
+	color     : #A3AFB7;
+}
+
+.hk-button span.icon-hk-cog{
+	margin-right  : 10px;
+	display       : inline-block;
+	display       : none;
+	text-align    : center;
+	vertical-align: center;
+	position      : relative;
+}
+
+
+
+/* ======================= [07] WHMCS PRESS BRANDING ================ */
+
+.hk-page-title .hk-logo{
+	display              : inline-block;
+	margin-right         : 20px;
+	height               : 44px;
+	width                : 44px;
+	text-indent          : -999999px;
+	vertical-align       : top;
+	-webkit-border-radius: 5px;
+	border-radius        : 5px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	position             : relative;
+}
+
+.hk-page-title .hk-logo:before{
+	position                 : absolute;
+	top                      : 0;
+	left                     : 0;
+	width                    : 44px;
+	line-height              : 44px;
+	font-size                : 24px;
+	height                   : 44px;
+	text-indent              : 0;
+	content                  : "\e600";
+	font-family              : 'hostkit';
+	text-align               : center;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing   : antialiased;
+	-moz-osx-font-smoothing  : grayscale;
+}
+
+.hk-hostkit-panel{
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	margin-bottom        : 20px;
+	text-align           : center;
+	padding-bottom: 20px;
+}
+
+
+.hk-hostkit-panel .hk-hostkit-links{
+	text-align: center;
+	padding: 5px 0;
+	width: 50%;
+	text-align: center;
+	margin: 10px 0;
+	background: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #57B4DF;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.hk-hostkit-panel a.hk-logo{
+	display   : block;
+	margin-top: 20px;
+	height: 50px;
+	text-indent: -999999px;
+	position: relative;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.hk-hostkit-panel a.hk-logo:before{
+	position                 : absolute;
+	top                      : 0;
+	left                     : 0;
+	width                    : 100%;
+	line-height              : 50px;
+	font-size                : 48px;
+	height                   : 44px;
+	text-indent              : 0;
+	content                  : "\e600";
+	font-family              : 'hostkit';
+	text-align               : center;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing   : antialiased;
+	-moz-osx-font-smoothing  : grayscale;
+}
+
+.hk-hostkit-panel h6{
+	text-align: center;
+	font-size: 32px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+
+.hk-github-panel{
+	-webkit-border-radius: 3px;
+	border-radius        : 3px;
+	border               : 1px solid rgba(0,0,0,0.1);
+	margin-bottom        : 20px;
+	padding-bottom       : 20px;
+	text-align: center;
+}
+
+.hk-github-panel a.hk-logo{
+	display   : block;
+	margin-top: 20px;
+	height: 64px;
+	text-indent: -999999px;
+	position: relative;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.hk-github-panel a.hk-logo:before{
+	position                 : absolute;
+	top                      : 0;
+	left                     : 0;
+	width                    : 100%;
+	line-height              : 50px;
+	font-size                : 48px;
+	height                   : 64px;
+	text-align               : center;
+	background               : url(images/GitHub-Mark-Light-64px.png) no-repeat center;
+	content                  :'';
+}
+
+.hk-github-panel h6{
+	text-align: center;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+
+.hk-github-panel .hk-github-links{
+	text-align: center;
+	padding: 5px 0;
+	width: 50%;
+	text-align: center;
+	margin: 10px 0;
+	background: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/* ======================= [08] QUICKSTATS PANEL ==================== */
+
+
+.hk-quickstats-outer{
+	overflow: auto;
+}
+
+.hk-quickstats-panel{
+	float: left;
+	margin: 10px 2% 10px 2%;
+	width: 29%;
+	color: #222;
+	background: #F3F7F9;
+	border : 1px solid rgba(0,0,0,0.1);
+	text-align :center;
+	padding: 20px 0;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hk-hero-stats{
+	display: block;
+	font-weight: 900;
+	line-height: 50px;
+	font-size: 25px;
+}
+
+
+/* ======================= [09] IP ADDRESS PANEL ==================== */
+
+.hk-show-ip-address{
+	margin-top: 20px;
+	text-align: center;
+	padding: 40px;
+	border-radius: 5px;
+	font-weight: 200;
+	font-size: 21px;
+}
+
+.hk-show-ip-address h6{
+	margin: 0px 0 20px 0;
+	text-align: center;
+	padding: 0px;
+	font-weight: 200;
+	font-size: 17px;
+}
+
+
+

@@ -1,5 +1,5 @@
 # hostkit
-Hostkit - Proper WHMCS WordPress Integration
+Hostkit - Proper WHMCS WordPress Integrations
 
 ##### HOSTKIT is a plugin that integrates the WHMCS support and billing software mainly for hosting with Wordpress.
 
