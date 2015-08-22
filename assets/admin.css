@@ -6,6 +6,7 @@
 /* ======================= [06] BUTTON STYLES ======================= */
 /* ======================= [07] WHMCS PRESS BRANDING ================ */
 /* ======================= [08] QUICKSTATS PANEL ==================== */
+/* ======================= [09] IP ADDRESS PANEL ==================== */
 
 
 /* ======================= [01] LAYOUT STYLES ======================= */
@@ -476,3 +477,26 @@
 	line-height: 50px;
 	font-size: 25px;
 }
+
+
+/* ======================= [09] IP ADDRESS PANEL ==================== */
+
+.hk-show-ip-address{
+	margin-top: 20px;
+	text-align: center;
+	padding: 40px;
+	border-radius: 5px;
+	font-weight: 200;
+	font-size: 21px;
+}
+
+.hk-show-ip-address h6{
+	margin: 0px 0 20px 0;
+	text-align: center;
+	padding: 0px;
+	font-weight: 200;
+	font-size: 17px;
+}
+
+
+
