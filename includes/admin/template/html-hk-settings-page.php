@@ -129,6 +129,22 @@ $hk_get_orders   = 'action=hk_get_orders';
 
 
 			</div><!-- .hk-api-settings-panel -->
+
+
+			<!-- SHOW IP ADDRESS -->
+
+			<div class="hk-show-ip-address hk-color-branding">
+
+
+				<h6><?php _e('Your IP Address','hostkit'); ?></h6>
+
+
+				<?php echo $_SERVER["REMOTE_ADDR"];  ?>
+
+
+			</div><!-- .hk-show-ip-address -->
+
+
 		</div><!-- .hk-span-3 -->
 
 
