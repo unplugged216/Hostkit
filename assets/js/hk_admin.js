@@ -40,9 +40,6 @@ jQuery( function ( $ ) {
 		},
 
 
-		update_vitals()
-
-
 		// update ajax values
 		ajax_update_values: function( e ){
 
